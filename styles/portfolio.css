@@ -5,8 +5,8 @@ h1 {
   color: #872319;
   font-weight: normal;
   font-size: 84px;
+  margin: 50px 50px;
   font-family: "Krona one", sans-serif;
-  padding-top: 25px;
 }
 h2 {
   font-weight: 400;
@@ -16,8 +16,8 @@ h2 {
   letter-spacing: 0.05em;
   line-height: 1.5;
   opacity: 83%;
-  margin: 35px 100px;
-  padding: 0px 50px;
+  margin: 15px 50px;
+  padding: 10px 50px;
 }
 
 p {
@@ -73,7 +73,7 @@ p {
   font-size: 20px;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  color: #492a0fc5;
+  color: #492a0fe5;
   opacity: 100%;
   margin-bottom: 50px;
   margin-top: 25px;
@@ -82,10 +82,10 @@ p {
 .btn-branding:hover {
   opacity: 50%;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1136px) {
   h2 {
-    padding: 0px 10px;
-    margin: 35px 200px;
+    padding: 10px 100px;
+    margin: 35px 100px;
   }
   .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 40px;
@@ -95,7 +95,7 @@ p {
     padding-right: 50px;
   }
 }
-@media (max-width: 880px) {
+@media (max-width: 857px) {
   h1 {
     font-size: 40px;
     margin-top: 15px;
