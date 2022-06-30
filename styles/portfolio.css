@@ -6,16 +6,14 @@ h1 {
   font-weight: normal;
   font-size: 72px;
   font-family: "Belleza", sans-serif;
-  padding-top: 150px;
-  padding-left: 89px;
+  padding-top: 50px;
 }
 h2 {
   font-weight: normal;
   font-size: 48px;
   font-family: "belleza", sans-serif;
   opacity: 73%;
-  margin-top: 40px;
-  padding-left: 89px;
+  margin-top: 25px;
   padding-right: 89px;
 }
 
@@ -23,25 +21,23 @@ p {
   font-weight: normal;
   font-family: "Montserrat Alternates", sans-serif;
 }
-.container-fluid {
-  padding-right: 39px;
-  margin-right: 50px;
-}
 .navbar {
   font-family: "Belleza", sans-serif;
-  margin: 20px 50px;
+  margin: 10px 35px;
+  padding: 0 50px;
 }
 .navbar-light .navbar-brand {
-  font-size: 24px;
+  font-size: 16px;
   color: #321d0b;
   opacity: 55%;
-  padding-left: 30px;
+  margin-right: 0px;
+
 }
 .navbar-light .navbar-brand:hover {
   opacity: 100%;
 }
 .navbar-light .navbar-nav .nav-link {
-  font-size: 20px;
+  font-size: 16px;
   color: #321d0b;
   opacity: 55%;
 }
@@ -64,17 +60,20 @@ p {
   background: #f1e6da;
   text-align: left;
   max-width: 100%;
-  margin-top: 20px;
+  padding-left: 86px;
+  padding-right: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
+
 .btn-branding {
   background-color: #c1b942;
   font-size: 24px;
   font-family: "poppins", sans-serif;
   color: #321d0b;
   opacity: 73%;
-  margin-left: 89px;
-  margin-bottom: 150px;
-  margin-top: 53px;
+  margin-bottom: 50px;
+  margin-top: 30px;
   padding: 15px 20px;
 }
 .btn-branding:hover {
@@ -87,5 +86,37 @@ p {
   }
   .navbar-expand-lg .nav-brand {
     padding-right: 30px;
+  }
+}
+@media (max-width: 576px) {
+  h1 {
+    font-size: 44px;
+  }
+  h2 {
+    font-size: 24px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .container-fluid {
+    margin-right: 0px;
+    padding-right: 0;
+    margin-left: 0;
+  }
+  .navbar-light .navbar-brand {
+    font-size: 16px;  
+    padding-left: 0;
+    margin-right: 0;
+  }
+  .navbar{
+      margin: 5px 25px;
+  }
+  .hero {
+    padding: 5px 0px;
+    text-align: center;
+    margin-top: 0px;
+  }
+  .btn-branding {
+    font-size: 16px;
+    text-align: center;
   }
 }
