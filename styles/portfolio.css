@@ -1,7 +1,7 @@
 :root {
   --branding-color: #cfc647ef;
   --secondary-color: #321d0be3;
-  --background-color: #fbf3eb; 
+  --background-color: #ffffff;  
   --heading-font-family: "Syne", sans-serif;
   --default-font-family: "Montserrat", sans-serif;
 }
@@ -15,27 +15,24 @@ h1 {
   color: var(--secondary-color);
   font-size: 96px;
   font-weight: 600;
-  margin-bottom: 25px;
+  line-height: 1.5;
   font-family: var(--heading-font-family);
 }
 h2 {
-  font-size: 64px;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.5;
+  opacity: 70%;
   font-family: var(--heading-font-family);
 }
 h3 {
-  font-weight: 600;
-  font-size: 40px;
-  opacity: 70%;
+  font-size: 64px;
+  line-height: 1.5;
   font-family: var(--heading-font-family);
-  margin-top: 25px;
-  margin-bottom: 25px;
 }
 p {
-  font-size: 18px;
+  font-size: 20px;
   opacity: 0.73;
-}
-div.container {
-  margin-top: 100px;
 }
 .navbar {
   padding: 40px 80px;
@@ -72,35 +69,32 @@ div.container {
 }
 .header-container {
   max-width: 100%;
-  padding-bottom: 10px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
+  box-shadow: 0 .25rem .25rem rgba(0,0,0,.075);
 }
 .hero-section {
   text-align: center;
+  padding: 80px 20px;
+}
+.content-container{
   width: 100%;
-  max-width: 1140px;
-  margin-top: 180px;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 100px;
+  padding: 60px 20px;
 }
 .lower-section{
-  margin-top: 150px;
-  margin-bottom: 150px;
+  margin-top: 50px;
+  margin-bottom: 100px;
 }
 .project-description {
   padding: 100px 60px;
 }
 .btn-branding {
   background-color: var(--branding-color);
-  border: 1px solid var(--branding-color);
   border-radius: 4px;
-  font-size: 24px;
+  font-size: 18px;
   color: white;
-  opacity: 100%;
-  margin-bottom: 25px;
-  margin-top: 35px;
-  padding: 10px 25px;
+  text-decoration: none;
+  padding: 15px 30px;
+  box-shadow: 5px 5px 5px rgba(0,0,0,.075);
 }
 .btn-branding:hover {
   color: white;
@@ -113,6 +107,7 @@ div.container {
   background-color: transparent;
   font-size: 20px;
   padding: 10px 25px;
+  box-shadow: 10px 5px 5px rgba(0,0,0,.075);
 }
 .btn-branding-outline:hover {
   background-color: var(--branding-color);
@@ -121,13 +116,12 @@ div.container {
 @media (max-width: 991px) {
   h1 {
     font-size: 64px;
-    line-height: 70px;
   }
   h2{
-    font-size: 38px;
+    font-size: 26px;
   }
   h3 {
-    font-size: 26px;
+    font-size: 32px;
   }
   .navbar{
     padding: 40px 0;
@@ -136,14 +130,6 @@ div.container {
     padding: 15px 30px;
     text-align: center;
   }
-  .hero-section{
-    text-align: center;
-    margin-right: auto;
-    margin-left:auto;
-    max-width: 100%;
-    margin-bottom: 100px;
-    margin-top: 100px;
-  }
   .btn-branding, .btn-branding-outline {
     font-size: 18px;
     font-weight: 500;
@@ -151,7 +137,6 @@ div.container {
     padding: 10px 10px;
     margin: 15px 0px 55px;
   }
-
   .project-description {
     text-align: center;
     padding: 25px 0;
