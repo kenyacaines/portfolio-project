@@ -1,7 +1,8 @@
 :root {
   --branding-color: #cfc647ef;
   --secondary-color: #321d0be3;
-  --heading-font-family: "Krona One", sans-serif;
+  --background-color: #fbf3eb; 
+  --heading-font-family: "Syne", sans-serif;
   --default-font-family: "Montserrat", sans-serif;
 }
 body {
@@ -11,21 +12,21 @@ body {
   
 }
 h1 {
-  color: #321d0bd5;
+  color: var(--secondary-color);
   font-size: 96px;
   font-weight: 600;
   margin-bottom: 25px;
-  font-family: "Syne", sans-serif;
+  font-family: var(--heading-font-family);
 }
 h2 {
   font-size: 64px;
-  font-family: "Syne", sans-serif;
+  font-family: var(--heading-font-family);
 }
 h3 {
-  font-weight: 400;
+  font-weight: 600;
   font-size: 40px;
-  opacity: 85%;
-  font-family: "Syne", sans-serif;
+  opacity: 70%;
+  font-family: var(--heading-font-family);
   margin-top: 25px;
   margin-bottom: 25px;
 }
@@ -40,32 +41,34 @@ div.container {
   padding: 40px 80px;
 }
 .navbar-light .navbar-brand {
-  font-size: 20px;
-  opacity: 70%;
+  color: var(--secondary-color);
+  font-size: 24px;
+  font-weight: 600;
+  opacity: 80%;
 }
 .navbar-light .navbar-brand:hover {
   opacity: 100%;
 }
 .navbar-light .navbar-nav .nav-link {
-  font-size: 16px;
+  font-size: 20px;
   letter-spacing: 1px;
-  font-weight: 500;
-  opacity: 0.75;
+  font-weight: 600;
+  opacity: 0.70;
   text-transform: uppercase;
   margin-left: auto;
   margin-right: auto;
   padding: 20px;
 }
 .navbar-light .navbar-nav .nav-link:hover {
-  opacity: 100%;
+  opacity: 80%;
 }
 .navbar-light .navbar-nav .nav-link.active {
-  color: #872319;
-  opacity: 100%;
+  color: var(--secondary-color);
+  opacity: 80%;
 }
 .navbar-light .navbar-toggler {
   border: none;
-  color: #fbf3eb;
+  color: var(--background-color);
 }
 .header-container {
   max-width: 100%;
@@ -83,16 +86,16 @@ div.container {
 }
 .lower-section{
   margin-top: 150px;
+  margin-bottom: 150px;
 }
 .project-description {
   padding: 100px 60px;
 }
 .btn-branding {
-  background-color: #cfc647ef;
-  border: 1px solid #cfc647ef;
+  background-color: var(--branding-color);
+  border: 1px solid var(--branding-color);
   border-radius: 4px;
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 24px;
   color: white;
   opacity: 100%;
   margin-bottom: 25px;
@@ -105,14 +108,14 @@ div.container {
 }
 .btn-branding-outline {
   border-radius: 4px;
-  color: #cfc647ef;
-  border: 1px solid #cfc647ef;
+  color: var(--branding-color);
+  border: 1px solid var(--branding-color);
   background-color: transparent;
-  font-size: 18px;
+  font-size: 20px;
   padding: 10px 25px;
 }
 .btn-branding-outline:hover {
-  background-color: #cfc647ef;
+  background-color: var(--branding-color);
   color: white;
 }
 @media (max-width: 991px) {
