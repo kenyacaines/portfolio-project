@@ -73,12 +73,27 @@ p {
   box-shadow: 0 .25rem .25rem rgba(0,0,0,.075);
 }
 .hero-section {
+  background-image: url(/images/home-background-img.png);
   text-align: center;
   padding: 80px 20px;
 }
 .content-container{
-  width: 100%;
-  padding: 60px 20px;
+  padding: 160px 20px;
+}
+.content{
+  margin: 30px;
+}
+.about-me{
+writing-mode: vertical-rl;
+text-orientation: mixed;
+transform: rotate(-180deg);
+}
+.skills-section{
+  background-color: var(--branding-color);
+}
+img.skills-img.img-fluid{
+width: 180px;
+height:161px;
 }
 .lower-section{
   margin-top: 50px;
