@@ -70,10 +70,12 @@ p {
 .header-container {
   max-width: 100%;
   margin-bottom: 50px;
-  box-shadow: 0 .25rem .25rem rgba(0,0,0,.075);
+}
+.bg-img{
+  position: absolute;
 }
 .hero-section {
-  background-image: url(/images/home-background-img.png);
+  position: absolute;
   text-align: center;
   padding: 80px 20px;
 }
