@@ -33,27 +33,39 @@ p {
   font-size: 20px;
   opacity: 0.73;
 }
+hr{
+  color: black;
+  opacity: 1;
+  margin-bottom: 30px;
+  margin-top: 0px;
+}
 .navbar {
-  padding: 20px 80px;
+  padding: 5px 80px;
+
+}
+.navbar.navbar-expand-lg.navbar-light{
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 .navbar-light .navbar-brand {
   color: var(--secondary-color);
   font-size: 24px;
   font-weight: 600;
   opacity: 80%;
+  padding: 0;
 }
 .navbar-light .navbar-brand:hover {
   opacity: 100%;
 }
 .navbar-light .navbar-nav .nav-link {
-  font-size: 20px;
+  font-size: 16px;
   letter-spacing: 1px;
   font-weight: 600;
   opacity: 0.7;
   text-transform: uppercase;
   margin-left: auto;
   margin-right: auto;
-  padding: 20px;
+  padding: 0 20px;
 }
 .navbar-light .navbar-nav .nav-link:hover {
   opacity: 80%;
@@ -68,6 +80,9 @@ p {
 }
 .header-container {
   max-width: 100%;
+}
+.card{
+  padding-bottom: 30px;
 }
 .card-img-overlay {
   padding: 200px 20px;
