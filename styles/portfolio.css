@@ -1,7 +1,7 @@
 :root {
   --branding-color: #cfc647ef;
   --secondary-color: #321d0be3;
-  --background-color: #ffffff;  
+  --background-color: #ffffff;
   --heading-font-family: "Syne", sans-serif;
   --default-font-family: "Montserrat", sans-serif;
 }
@@ -9,13 +9,12 @@ body {
   font-family: var(--default-font-family);
   color: #321d0bd5;
   line-height: 1.5;
-  
 }
 h1 {
-  color: var(--secondary-color);
-  font-size: 96px;
-  font-weight: 600;
-  line-height: 1.5;
+  color: #feb800;
+  font-size: 120px;
+  font-weight: 800;
+  line-height: 1;
   font-family: var(--heading-font-family);
 }
 h2 {
@@ -35,7 +34,7 @@ p {
   opacity: 0.73;
 }
 .navbar {
-  padding: 40px 80px;
+  padding: 20px 80px;
 }
 .navbar-light .navbar-brand {
   color: var(--secondary-color);
@@ -50,7 +49,7 @@ p {
   font-size: 20px;
   letter-spacing: 1px;
   font-weight: 600;
-  opacity: 0.70;
+  opacity: 0.7;
   text-transform: uppercase;
   margin-left: auto;
   margin-right: auto;
@@ -69,35 +68,36 @@ p {
 }
 .header-container {
   max-width: 100%;
-  margin-bottom: 50px;
 }
-.bg-img{
-  position: absolute;
+.card-img-overlay {
+  padding: 200px 20px;
 }
-.hero-section {
-  position: absolute;
-  text-align: center;
-  padding: 80px 20px;
+.first-name{
+  padding-right: 95px;
+  padding-bottom: 10px;
 }
-.content-container{
+.last-name{
+  padding-left: 95px;
+}
+.content-container {
   padding: 160px 20px;
 }
-.content{
+.content {
   margin: 30px;
 }
-.about-me{
-writing-mode: vertical-rl;
-text-orientation: mixed;
-transform: rotate(-180deg);
+.about-me {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(-180deg);
 }
-.skills-section{
+.skills-section {
   background-color: var(--branding-color);
 }
-img.skills-img.img-fluid{
-width: 180px;
-height:161px;
+img.skills-img.img-fluid {
+  width: 180px;
+  height: 161px;
 }
-.lower-section{
+.lower-section {
   margin-top: 50px;
   margin-bottom: 100px;
 }
@@ -111,7 +111,7 @@ height:161px;
   color: white;
   text-decoration: none;
   padding: 15px 30px;
-  box-shadow: 5px 5px 5px rgba(0,0,0,.075);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.075);
 }
 .btn-branding:hover {
   color: white;
@@ -124,30 +124,49 @@ height:161px;
   background-color: transparent;
   font-size: 20px;
   padding: 10px 25px;
-  box-shadow: 10px 5px 5px rgba(0,0,0,.075);
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.075);
 }
 .btn-branding-outline:hover {
   background-color: var(--branding-color);
   color: white;
 }
-@media (max-width: 991px) {
+@media(min-width:1440px){
+  img.card-img.img-fluid{
+  height: 735px;
+}
+}
+
+@media(max-width:1300px){
+  h1{
+  
+  }
+}
+@media (max-width: 992px) {
   h1 {
     font-size: 64px;
   }
-  h2{
+  h2 {
     font-size: 26px;
   }
   h3 {
     font-size: 32px;
   }
-  .navbar{
+  .navbar {
     padding: 40px 0;
   }
   .navbar-nav .nav-link {
     padding: 15px 30px;
     text-align: center;
   }
-  .btn-branding, .btn-branding-outline {
+  .card-img-overlay{
+    padding: 80px 0;
+  }
+  .first-name,.last-name{
+   padding: 0;
+   margin: 0;
+  }
+  .btn-branding,
+  .btn-branding-outline {
     font-size: 18px;
     font-weight: 500;
     text-align: center;
