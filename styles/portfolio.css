@@ -7,7 +7,7 @@
 }
 body {
   font-family: var(--default-font-family);
-  color: #321d0bd5;
+  color: var(--default-font-family);
   line-height: 1.5;
 }
 h1 {
@@ -19,13 +19,13 @@ h1 {
 }
 h2 {
   font-weight: 600;
-  font-size: 40px;
+  font-size: 96px;
   line-height: 1.5;
   opacity: 70%;
   font-family: var(--heading-font-family);
 }
 h3 {
-  font-size: 64px;
+  font-size: 84px;
   line-height: 1.5;
   font-family: var(--heading-font-family);
 }
@@ -58,9 +58,6 @@ a.nav-link{
   font-weight: 600;
   opacity: 0.95;
   text-transform: uppercase;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 50px;
 }
 .navbar-brand {
   color: var(--secondary-color);
@@ -102,10 +99,11 @@ a.nav-link{
 .content {
   margin: 30px;
 }
-.about-me {
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
-  transform: rotate(-180deg);
+.about-me-img{
+  padding: 60px;
+}
+.about-me-snippet{
+  margin-top: 100px;
 }
 .skills-section {
   background-color: var(--branding-color);
@@ -141,11 +139,18 @@ img.skills-img.img-fluid {
   background-color: transparent;
   font-size: 20px;
   padding: 10px 25px;
+  margin-top: 35px;
   box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.075);
 }
 .btn-branding-outline:hover {
   background-color: var(--branding-color);
   color: white;
+}
+@media (min-width: 992px){
+.navbar-expand-lg .navbar-nav .nav-link {
+padding: 0 30px;
+
+}
 }
 @media(min-width:1440px){
   img.card-img.img-fluid{
@@ -162,13 +167,8 @@ img.skills-img.img-fluid {
   h3 {
     font-size: 32px;
   }
-  .navbar {
-    padding: 40px 0;
-  }
-  .navbar-nav .nav-link {
-    padding: 15px 30px;
-    text-align: center;
-  }
+  
+
   .card-title{
     padding: 100px 0;
   }
