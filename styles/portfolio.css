@@ -1,6 +1,6 @@
 :root {
   --branding-color: #cfc647ef;
-  --secondary-color: #321d0be3;
+  --secondary-color: black;
   --background-color: #ffffff;
   --heading-font-family: "Syne", sans-serif;
   --default-font-family: "Montserrat", sans-serif;
@@ -40,41 +40,43 @@ hr{
   margin-top: 0px;
 }
 .navbar {
-  padding: 5px 80px;
-
+  padding: 10px 80px;
 }
 .navbar.navbar-expand-lg.navbar-light{
   padding-top: 20px;
   padding-bottom: 10px;
 }
-.navbar-light .navbar-brand {
-  color: var(--secondary-color);
-  font-size: 24px;
-  font-weight: 600;
-  opacity: 80%;
-  padding: 0;
+.navbar-light.navbar-nav.nav-link{
+  color: black;
 }
-.navbar-light .navbar-brand:hover {
-  opacity: 100%;
-}
-.navbar-light .navbar-nav .nav-link {
+a.nav-link{
+  color: black;
+  text-decoration: none;
+  font-family: var(--default-font-family);
   font-size: 16px;
   letter-spacing: 1px;
   font-weight: 600;
-  opacity: 0.7;
+  opacity: 0.95;
   text-transform: uppercase;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 20px;
+  padding: 0 50px;
 }
-.navbar-light .navbar-nav .nav-link:hover {
-  opacity: 80%;
-}
-.navbar-light .navbar-nav .nav-link.active {
+.navbar-brand {
   color: var(--secondary-color);
+  font-family: var(--heading-font-family);
+  font-size: 24px;
+  font-weight: 800;
   opacity: 80%;
+  padding: 0;
 }
-.navbar-light .navbar-toggler {
+.navbar-brand:hover {
+  opacity: 100%;
+}
+.navbar-nav .nav-link:hover {
+  opacity: 100%;
+}
+.navbar-toggler {
   border: none;
   color: var(--background-color);
 }
@@ -84,8 +86,8 @@ hr{
 .card{
   padding-bottom: 30px;
 }
-.card-img-overlay {
-  padding: 200px 20px;
+.card-title {
+  padding: 140px 20px;
 }
 .first-name{
   padding-right: 95px;
@@ -150,15 +152,9 @@ img.skills-img.img-fluid {
   height: 735px;
 }
 }
-
-@media(max-width:1300px){
-  h1{
-  
-  }
-}
 @media (max-width: 992px) {
   h1 {
-    font-size: 64px;
+    font-size: 80px;
   }
   h2 {
     font-size: 26px;
@@ -173,8 +169,8 @@ img.skills-img.img-fluid {
     padding: 15px 30px;
     text-align: center;
   }
-  .card-img-overlay{
-    padding: 80px 0;
+  .card-title{
+    padding: 100px 0;
   }
   .first-name,.last-name{
    padding: 0;
@@ -191,5 +187,13 @@ img.skills-img.img-fluid {
   .project-description {
     text-align: center;
     padding: 25px 0;
+  }
+}
+@media(max-width:550px){
+ h1{
+   font-size: 42px;
+ }
+ .card-title{
+    padding: 30px 0;
   }
 }
