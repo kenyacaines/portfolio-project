@@ -18,16 +18,23 @@ h1 {
   font-family: var(--heading-font-family);
 }
 h2 {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 96px;
   line-height: 1.5;
-  opacity: 70%;
+  opacity: 0.8;
   font-family: var(--heading-font-family);
 }
 h3 {
   font-size: 84px;
+  font-weight: 700;
   line-height: 1.5;
   font-family: var(--heading-font-family);
+}
+h4{
+  font-size: 48px;
+  font-weight: 400;
+  font-family: var(--heading-font-family);
+  line-height: 1.5;
 }
 p {
   font-size: 20px;
@@ -101,6 +108,10 @@ a.nav-link{
 }
 .about-me-img{
   padding: 60px;
+}
+.about-me-title{
+  color: #872319;
+  font-weight: 700;
 }
 .about-me-snippet{
   margin-top: 100px;
@@ -181,8 +192,6 @@ padding: 0 30px;
   h3 {
     font-size: 32px;
   }
-  
-
   .card-title{
     padding: 100px 0;
   }
