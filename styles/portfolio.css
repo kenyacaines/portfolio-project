@@ -9,36 +9,35 @@ body {
   font-family: var(--default-font-family);
   color: var(--secondary-color);
   line-height: 1.5;
+  font-size: 24px;
 }
 h1 {
   color: #feb800;
-  font-size: 120px;
+  font-size: 96px;
   font-weight: 800;
-  line-height: 1;
+  line-height: 1.5;
   font-family: var(--heading-font-family);
 }
 h2 {
   font-weight: 700;
-  font-size: 96px;
+  font-size: 72px;
   line-height: 1.5;
-  opacity: 0.8;
   font-family: var(--heading-font-family);
 }
 h3 {
-  font-size: 84px;
+  font-size: 48px;
   font-weight: 700;
   line-height: 1.5;
   font-family: var(--heading-font-family);
 }
 h4{
-  font-size: 48px;
+  font-size: 32px;
   font-weight: 400;
   font-family: var(--heading-font-family);
   line-height: 1.5;
 }
 p {
-  font-size: 20px;
-  opacity: 0.73;
+  font-size: 24px;
 }
 hr{
   color: black;
@@ -140,6 +139,12 @@ p.skill{
 .lower-section {
   margin-top: 50px;
   margin-bottom: 100px;
+}
+.education-cert-section{
+  background-color: var(--branding-color);
+}
+.fun-section{
+  background-color: #bcd7e4;
 }
 .project-description {
   padding: 100px 60px;
