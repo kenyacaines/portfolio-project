@@ -205,6 +205,9 @@ padding: 0 30px;
     font-size: 14px;
     text-align: center;
   }
+  hr{
+    margin:0px;
+  }
   .navbar.navbar-expand-lg.navbar-light{
     padding: 10px;
   }
@@ -215,30 +218,42 @@ padding: 0 30px;
    padding: 0;
    margin: 0;
   }
+  .about-me-snippet{
+    text-align: center;
+    margin-top: 50px;
+  }
+  p.skill{
+    font-size: 18px;
+    padding: 25px 0px;
+  }
   .skills-section{
-    padding: 0px 20px;
+    padding: 0px 10px;
   }
   .skills-selections{
     padding-top: 15px;
   }
   img.skills-img.img-fluid{
-    margin: 15px 20px;
+    margin: 15px 0px;
     width: 160px;
     height: 140px;
   }
   .btn-branding,
   .btn-branding-outline {
-    text-align: center;
     font-size: 18px;
     font-weight: 500;
     text-align: center;
     padding: 10px 10px;
-    margin: 35px 0px;
+    margin: 0px 0px;
   }
   .project-description {
     text-align: center;
     padding: 25px 0;
   }
+ 
+  .work-inquiry.container{
+    margin:  10px 0;
+  }
+  
 }
 @media(max-width:550px){
  h1{
@@ -246,5 +261,14 @@ padding: 0 30px;
  }
  .card-title{
     padding: 30px 0;
+  }
+   img.skills-img.img-fluid{
+    margin: 15px 0px;
+    width: 160px;
+    height: 100px;
+    padding: 0px 5px;
+  }
+    .skills-section{
+    padding: 0px 20px;
   }
 }
