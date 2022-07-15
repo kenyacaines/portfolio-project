@@ -62,7 +62,6 @@ a.nav-link {
   letter-spacing: 1px;
   font-weight: 600;
   opacity: 0.95;
-  text-transform: uppercase;
 }
 .navbar-brand {
   color: var(--secondary-color);
