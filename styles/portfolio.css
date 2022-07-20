@@ -20,20 +20,21 @@ h1 {
   font-family: var(--heading-font-family);
 }
 h2 {
-  font-weight: 100;
-  font-size: 48px;
-  color: var(--secondary-color);
-  font-family: var(--second-heading-font-family);
-}
-h3 {
-  font-size: 48px;
-  font-weight: 400;
+  font-size: 64px;
+  font-weight: 500;
   color: var(--secondary-color);
   line-height: 1.5;
   font-family: var(--heading-font-family);
 }
+h3 {
+  font-size: 48px;
+  font-weight: 100;
+  color: var(--secondary-color);
+  font-family: var(--second-heading-font-family);
+}
+
 h4 {
-  font-size: 32px;
+  font-size: 40px;
   font-weight: 400;
   color: var(--secondary-color);
   font-family: var(--second-heading-font-family);
@@ -47,7 +48,7 @@ p {
 hr {
   color: black;
   opacity: 1;
-  margin: 20px 0px;
+  margin: 20px auto;
 }
 .navbar {
   padding: 20px 80px 0;
@@ -56,17 +57,16 @@ hr {
   padding-top: 20px;
 }
 .navbar-light.navbar-nav.nav-link {
-  color: black;
+  color: var(--secondary-color);
 }
 a.nav-link {
-  color: black;
+  color: var(--secondary-color);
   text-align: center;
   text-decoration: none;
   font-family: var(--heading-font-family);
   font-size: 16px;
   letter-spacing: 1px;
   font-weight: 600;
-  opacity: 0.95;
 }
 .navbar-brand {
   color: var(--secondary-color);
@@ -97,7 +97,7 @@ a.nav-link {
   background-color: #bcd7e4;
 }
 .content-container {
-  padding: 60px 20px;
+  padding: 60px 0px;
 }
 .content {
   margin: 30px;
@@ -110,16 +110,17 @@ p.skill {
 .project-description {
   padding: 100px 60px;
 }
-.about-me-title {
-  color: #872319;
-  font-weight: 700;
-}
 
 img.about-me-img {
   width: 80%;
 }
 img.skills-img {
   width: 50%;
+}
+.project-img:hover,
+.project-img:focus {
+  box-shadow: 5px 5px 5px rgba(78, 65, 65, 0.075);
+  transform: translateY(-0.1em);
 }
 img.social-icon {
   height: 30px;
@@ -133,7 +134,7 @@ img.social-icon {
   font-weight: 600;
   color: white;
   text-decoration: none;
-  padding: 15px 30px;
+  padding: 15px 20px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.075);
 }
 .btn-branding:hover {
@@ -152,7 +153,7 @@ img.social-icon {
   text-decoration: none;
   padding: 15px 30px;
   margin-top: 35px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.075);
+  box-shadow: 5px 5px 5px rgba(78, 65, 65, 0.075);
 }
 .btn-branding-outline:hover {
   background-color: var(--branding-color);
@@ -166,6 +167,7 @@ img.social-icon {
 @media (max-width: 992px) {
   h1 {
     font-size: 64px;
+    text-align: center;
   }
   h2 {
     font-size: 30px;
@@ -191,6 +193,9 @@ img.social-icon {
   .hero{
     padding: 100px 50px;
   }
+  .content-container{
+    padding: 60px 0;
+  }
   .about-me-snippet {
     text-align: center;
     margin-top: 50px;
@@ -205,14 +210,20 @@ img.social-icon {
   .skills-selections {
     padding-top: 15px;
   }
+  div.profile-img{
+    text-align: center;
+  }
   img.skills-img.img-fluid {
     margin: 15px 0px;
     width: 160px;
     height: 140px;
   }
-  .btn-branding,
-  .btn-branding-outline {
-    font-size: 18px;
+  img.about-me-img{
+    width: 48%;
+  }
+  a.btn-branding,
+  a.btn-branding-outline {
+    font-size: 16px;
     font-weight: 500;
     text-align: center;
     padding: 10px 10px;
