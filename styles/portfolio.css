@@ -1,6 +1,6 @@
 :root {
   --branding-color: #cfc647ef;
-  --secondary-color: #231F20;
+  --secondary-color: #231f20;
   --background-color: #fef6ec;
   --heading-font-family: "Syne", sans-serif;
   --second-heading-font-family: "Marcellus", serif;
@@ -20,35 +20,58 @@ h1 {
   font-family: var(--heading-font-family);
 }
 h2 {
-  font-size: 48px;
-  font-weight: 100;
-  color: var(--secondary-color);
+  font-size: 72px;
+  font-weight: 500;
+  color: #872319;
   line-height: 1.5;
-  font-family: var(--second-heading-font-family);
+  font-family: var(--heading-font-family);
 }
 h3 {
-  font-size: 48px;
+  font-size: 56px;
   font-weight: 600;
   color: var(--secondary-color);
   font-family: var(--heading-font-family);
 }
 
 h4 {
-  font-size: 40px;
-  font-weight: 500;
+  font-size: 34px;
+  font-weight: 300;
   color: var(--secondary-color);
-  font-family: var(--heading-font-family);
+  font-family: var(--default-font-family);
   line-height: 1.5;
 }
 p {
-  font-size: 16px;
-  color: var(--secondary-color);
-  font-family: var(--default-font-family);
+font-size: 18px;
+font-weight: normal;
+line-height: 1.5;
 }
 hr {
   color: black;
   opacity: 1;
   margin: 20px auto;
+}
+footer{
+margin: 60px 0;
+}
+footer .call-to-action{
+  padding: 30px 140px;
+  
+}
+footer .call-to-action p{
+  margin: 0;
+}
+footer .social-links a{
+margin: 0 20px;
+color: var(--secondary-color);
+background: var(--branding-color);
+padding: 10px 14px;
+font-size: 18px;
+border-radius: 50%;
+transition: all 100ms ease-in-out;
+}
+footer .social-links a:hover{
+color: var(--background-color);
+background: var(--branding-color);
 }
 .navbar {
   padding: 20px 80px 0;
@@ -96,15 +119,12 @@ a.nav-link {
 .blue-section {
   background-color: #bcd7e4;
 }
-.content-container {
-  padding: 60px 0px;
-}
+
 .content {
   margin: 30px;
 }
-p.skill {
-  padding-top: 40px;
-  font-size: 32px;
+.skill-selections p {
+  font-size: 24px;
   text-align: center;
 }
 .project-description {
@@ -112,19 +132,15 @@ p.skill {
 }
 
 img.about-me-img {
-  width: 80%;
+  width: 90%;
 }
 img.skills-img {
-  width: 50%;
+  width: 160px;
 }
 .project-img:hover,
 .project-img:focus {
   box-shadow: 5px 5px 5px rgba(78, 65, 65, 0.075);
   transform: translateY(-0.1em);
-}
-img.social-icon {
-  height: 30px;
-  margin: 0 10px;
 }
 .btn-branding {
   background-color: var(--branding-color);
@@ -132,9 +148,10 @@ img.social-icon {
   font-family: var(--heading-font-family);
   font-size: 18px;
   font-weight: 600;
-  color: white;
+  line-height: 1.5;
+  color:white;
   text-decoration: none;
-  padding: 15px 20px;
+  padding: 15px 25px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.075);
 }
 .btn-branding:hover {
@@ -151,7 +168,7 @@ img.social-icon {
   font-size: 18px;
   font-weight: 600;
   text-decoration: none;
-  padding: 15px 30px;
+  padding: 15px 25px;
   margin-top: 35px;
   box-shadow: 5px 5px 5px rgba(78, 65, 65, 0.075);
 }
@@ -166,22 +183,21 @@ img.social-icon {
 }
 @media (max-width: 992px) {
   h1 {
-    font-size: 64px;
+    font-size: 72px;
     text-align: center;
   }
   h2 {
-    font-size: 30px;
+    font-size: 64px;
   }
   h3 {
     text-align: center;
-    font-size: 24px;
+    font-size: 32px;
   }
   h4 {
     text-align: center;
-    font-size: 18px;
+    font-size: 20px;
   }
   p {
-    font-size: 14px;
     text-align: center;
   }
   hr {
@@ -190,61 +206,42 @@ img.social-icon {
   .navbar.navbar-expand-lg.navbar-light {
     padding: 10px;
   }
-  .hero{
+  .hero {
     padding: 100px 50px;
   }
-  .content-container{
-    padding: 60px 0;
-  }
-  .about-me-snippet {
-    text-align: center;
-    margin-top: 50px;
-  }
+
   p.skill {
     font-size: 18px;
     padding: 25px 0px;
   }
-  .skills-section {
-    padding: 0px 10px;
-  }
-  .skills-selections {
-    padding-top: 15px;
-  }
-  div.profile-img{
+  div.profile-img {
     text-align: center;
   }
   img.skills-img.img-fluid {
     margin: 15px 0px;
+    padding: 0 15px;
     width: 160px;
-    height: 140px;
+    
   }
-  img.about-me-img{
-    width: 48%;
+  img.about-me-img {
+    width: 50%;
+    text-align: center;
   }
   a.btn-branding,
   a.btn-branding-outline {
-    font-size: 16px;
-    font-weight: 500;
-    text-align: center;
-    padding: 10px 10px;
     margin: 0px 0px;
   }
   .project-description {
     text-align: center;
     padding: 25px 0;
   }
-  .work-inquiry.container {
-    margin: 10px 0;
-  }
 }
 @media (max-width: 550px) {
   img.skills-img.img-fluid {
     margin: 15px 0px;
-    width: 160px;
+    width: 120px;
     height: 100px;
     padding: 0px 5px;
   }
-  .skills-section {
-    padding: 0px 20px;
-  }
+
 }
